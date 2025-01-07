@@ -138,6 +138,17 @@ function App() {
               />
             </div> */}
             {/* Repite el patrón para las demás tarjetas */}
+              <div
+              className="col-md-4 col-sm-6 col-12 mb-4 d-flex justify-content-center"
+              data-aos="zoom-in"
+              data-aos-duration="3000"
+            >
+              <RoundImageCard
+                imageUrl="img/services/control-de-incendios-768x768.jpg"
+                title="Refrigeración y Aire Acondicionado"
+                // text="This is some example text for the third card."
+              />
+            </div>
           </div>
         </div>
       </Element>
