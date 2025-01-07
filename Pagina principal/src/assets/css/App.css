@@ -1,0 +1,10 @@
+#about {
+  position: relative; /* Necesario para que el ::after se posicione dentro del contenedor */
+  background: linear-gradient(rgba(3, 36, 62, 0.9), rgba(3, 36, 62, 0.9)),
+    url("img/about/img_fondo.jpg"); /* Fondo principal con degradado */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh; /* Altura mínima para cubrir toda la pantalla */
+  color: #fff;
+}

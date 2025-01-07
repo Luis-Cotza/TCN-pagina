@@ -1,0 +1,92 @@
+.container {
+  width: 100%;
+  height: 100%;
+}
+.cont {
+  margin: 0;
+  height: 150px;
+  border-radius: 15px;
+  background-color: #ffffff;
+}
+.abo {
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 30px;
+  margin: 0 auto;
+  padding: 0 10%;
+}
+.cards {
+  width: auto;
+  padding: 10px;
+  margin-bottom: 30px;
+  background-color: #fa980e;
+  border-radius: 10px;
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.cards:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.2);
+}
+.card-children {
+  width: 350px;
+  height: 300px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  color: #ffffff;
+  background-color: white; /* Color de fondo con opacidad para que se vea el desenfoque */
+  backdrop-filter: blur(10px);
+  max-width: 800px; /* Ajusta el ancho máximo del contenedor */
+  margin: 0 auto; /* Ajusta el valor para más o menos desenfoque */
+}
+.card-children-title {
+  width: 125px;
+  margin-top: 10px;
+  padding-top: 2px;
+  border-radius: 9px;
+  color: #072740;
+  font-weight: bold;
+}
+.card-children-text {
+  /* text-align: justify; */
+  font-size: 20px;
+  color: #072740;
+  margin-bottom: 15px;
+  line-height: 20px;
+}
+.vision-img {
+  height: 262px;
+  shape-outside: url("img/about/3.png");
+  shape-image-threshold: 0.5;
+  /* shape-margin: 5px; */
+  float: left;
+  margin-top: -5px;
+  margin-left: -75px;
+}
+.valores {
+  height: 262px;
+  margin-top: -160px;
+  margin-left: 100px;
+}
+@media (max-width: 576px) {
+  .abo {
+    font-size: 20px; /* Para pantallas pequeñas como móviles */
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .vision-img {
+    margin-top: 0;
+  }
+  .valores {
+    margin-top: -155px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .abo {
+    font-size: 18px; /* Para tablets */
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}

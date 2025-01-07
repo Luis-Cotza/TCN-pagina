@@ -1,0 +1,64 @@
+.banner-container {
+  position: relative; /* Posición relativa para permitir que el título se posicione correctamente */
+}
+
+.banner-title {
+  background: transparent;
+  backdrop-filter: blur(10px);
+  position: absolute; /* Posiciona el título sobre el banner */
+  top: 55px; /* Distancia desde la parte superior */
+  left: 50%; /* Centra horizontalmente */
+  transform: translateX(-50%); /* Ajuste para centrar el título */
+  font-size: 60px; /* Tamaño de la fuente */
+  font-weight: bold; /* Negrita */
+  color: #ffffff; /* Color del texto */
+  z-index: 2; /* Asegura que el título esté encima del banner */
+  text-align: center; /* Centrar el texto */
+}
+
+.image-banner-container {
+  width: 100%;
+  height: 30rem; /* Altura del banner */
+  overflow: hidden; /* Oculta el contenido que se desplaza fuera del área visible */
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../img/fondo.jpg) center center fixed;
+  padding: 60px 0px; /* Espaciado superior e inferior */
+  display: flex;
+  align-items: center; /* Alinea las imágenes verticalmente */
+}
+
+.moving-image-banner {
+  display: flex;
+  animation: moveImages 15s linear infinite; /* Animación continua */
+}
+
+.moving-image-banner img {
+  width: 300px; /* Ajusta el tamaño de las imágenes */
+  height: 100px;
+  margin-right: 20px; /* Espacio entre las imágenes */
+}
+
+/* Animación que desplaza las imágenes de derecha a izquierda */
+@keyframes moveImages {
+  0% {
+    transform: translateX(0); /* Comienza desde la posición inicial */
+  }
+  100% {
+    transform: translateX(
+      -50%
+    ); /* Desplaza las imágenes a la mitad para crear un ciclo */
+  }
+}
+@media (max-width: 576px) {
+  .banner-title {
+    top: 10%;
+    font-size: 45px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .banner-title {
+    top: 10%;
+    font-size: 45px;
+  }
+}
